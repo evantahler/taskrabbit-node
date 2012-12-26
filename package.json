@@ -1,0 +1,22 @@
+{
+  "author": "Evan Tahler <evantahler@gmail.com>",
+  "name": "taskrabbit",
+  "description": "a node.js wrapper for the taskrabbit API",
+  "version": "0.0.1",
+  "homepage": "http://www.taskrabbit.com/developer",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/evantahler/taskrabbit-node.git"
+  },
+  "keywords": ["taskrabbit", "api", "chores", "task", "tasks", "rabbit", "rabbits"],
+  "engines": {
+    "node": ">=0.6.0"
+  },
+  "dependencies": {
+    "request":"2.11.x"
+  },
+  "devDependencies": {
+    "mocha":"1.6.x",
+    "should":"1.2.x"
+  }
+}
