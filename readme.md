@@ -4,7 +4,7 @@
 
 ## Use
 
-1. You will need to register a client application in the developer stand box @ [https://taskrabbitdev.com](https://taskrabbitdev.com)
+1. You will need to register a client application in the developer sand box @ [https://taskrabbitdev.com](https://taskrabbitdev.com)
 2. Be sure to note your `consumerKey`, `consumerSecret` and `oauthCallback`.  You can always modify this information @ [https://taskrabbitdev.com/developer/dashboard](https://taskrabbitdev.com/developer/dashboard)
 3. `npm install taskrabbit`
 4. Configure the API (these three parameters are required): 
