@@ -64,3 +64,13 @@
 - Remember, every action is done on behalf of a user.  There are no 'open' actions you can call on the API without a user's token
 - Users can revoke their tokens from your application.  Always be sure to check for authentication errors
 - You will need to set the callback to your application in your account on [https://taskrabbitdev.com/developer/dashboard](https://taskrabbitdev.com/developer/dashboard) and `options.oauthCallback` MUST match that set with TaskRabbit
+
+## Defaults
+
+The following defaults are provided when you initialize a new API client.  You can overwrite them as you need:
+
+	{
+	  endpoint: "https://taskrabbitdev.com",
+	  apiVersion: "v1",
+	  verbose: false,
+	}
