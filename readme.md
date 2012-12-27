@@ -1,6 +1,8 @@
 # TaskRabbit API in node.js
 
-**Full Details on the TaskRabbit REST API can be found here: [http://taskrabbit.github.com/](http://taskrabbit.github.com/)**
+- **Full Details on the TaskRabbit REST API can be found here: [http://taskrabbit.github.com/](http://taskrabbit.github.com/)**
+- ** Support for the API can be found at [http://support.taskrabbit.com/forums/21264831-faqs-for-developers](http://support.taskrabbit.com/forums/21264831-faqs-for-developers)**
+- ** If you have any questions (including asking for production access), email api@taskrabbit.com**
 
 ## Use
 
