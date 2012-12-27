@@ -78,6 +78,11 @@
 - Users can revoke their tokens from your application.  Always be sure to check for authentication errors
 - You will need to set the callback to your application in your account on [https://taskrabbitdev.com/developer/dashboard](https://taskrabbitdev.com/developer/dashboard) and `options.oauthCallback` MUST match that set with TaskRabbit
 
+## Examples
+
+- [Gaining user oAuth tokens](https://github.com/evantahler/taskrabbit-node/blob/master/examples/auth.js)
+- [using the API methods](https://github.com/evantahler/taskrabbit-node/blob/master/examples/data.js)
+
 ## Defaults
 
 The following defaults are provided when you initialize a new API client.  You can overwrite them as you need:
