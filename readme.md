@@ -17,22 +17,18 @@
 		  oauthCallback: "http://127.0.0.1:8080/oauth_callback",
 		});
 		
-5. Every action will be authenticated on behalf of a user.  This API provides some helpers to authenticate users:
+5. Every action will be authenticated on behalf of a user.  This API provides some helpers to authenticate users and gain their oAuth tokens:
 
 		http.createServer(function (req, res) {
 		
 		  if(req.url == "/auth"){
-		
-		    res.writeHead(301, {'Location': taskrabbit.oauthClientURL() });
+			res.writeHead(301, {'Location': taskrabbit.oauthClientURL() });
 		    res.end('Go Here: ' + taskrabbit.oauthClientURL() + '\n');
-		
 		  }else if(req.url.indexOf("/oauth_callback") >= 0){
-		
 		    taskrabbit.oauthAuthenticateClient(req, function(error, access_token){
 		      res.writeHead(200, {'Content-Type': 'text/plain'});
 		      res.end('Your oAuth access token is: ' + access_token + '\n');
 		    });
-		
 		  }
 		  
 		}).listen(8080, '0.0.0.0');
