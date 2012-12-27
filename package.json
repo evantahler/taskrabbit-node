@@ -17,7 +17,8 @@
   },
   "devDependencies": {
     "mocha":"1.6.x",
-    "should":"1.2.x"
+    "should":"1.2.x",
+    "async":"0.1.x"
   },
   "main": "./lib/taskrabbit.js"
 }
