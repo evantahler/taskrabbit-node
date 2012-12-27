@@ -6,8 +6,8 @@ var http = require('http');
 var taskrabbitPrototype = require(__dirname + "/../lib/taskrabbit.js");
 
 var taskrabbit = new taskrabbitPrototype({
-  consumerKey: "N1CAdVgt1JHkZpot0z1JlJD7IT0uDCI5HDQI7IuF",
-  consumerSecret: "f2XTfSZUROB5g61RlFj8GkemnbsUQMp3ijOMD8Uh",
+  consumerKey: "XXX",
+  consumerSecret: "XXX",
   oauthCallback: "http://127.0.0.1:8080/oauth_callback",
   verbose: true,
 });
