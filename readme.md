@@ -7,7 +7,7 @@
 1. You will need to register a client application in the developer stand box @ [https://taskrabbitdev.com](https://taskrabbitdev.com)
 2. Be sure to note your `consumerKey`, `consumerSecret` and `oauthCallback`.  You can always modify this information @ [https://taskrabbitdev.com/developer/dashboard](https://taskrabbitdev.com/developer/dashboard)
 3. `npm install taskrabbit`
-4. Configure the API: 
+4. Configure the API (these three parameters are required): 
 
 		var taskrabbitPrototype = require(taskrabbit");
 		
@@ -59,7 +59,20 @@
 
 7. When your application is ready, contact TaskRabbit to get a production developer account.
 
-## NOTES
+## Methods
+
+- `taskrabbit.account(accessToken, callback)`
+- `taskrabbit.cities(accessToken, callback)`
+- `taskrabbit.taskPost(accessToken, payload, callback)`
+- `taskrabbit.taskView(accessToken, taskID, callback)`
+- `taskrabbit.taskDelete(accessToken, taskID, callback)`
+- `taskrabbit.taskClose(accessToken, taskID, callback)`
+- `taskrabbit.taskComment(accessToken, taskID, payload, callback)`
+- `taskrabbit.taskOffers(accessToken, taskID, callback)`
+- `taskrabbit.taskOfferAccept(accessToken, taskID, offerID, callback)`
+- `taskrabbit.taskConverstaions(accessToken, taskID, callback)`
+
+## Notes
 
 - Remember, every action is done on behalf of a user.  There are no 'open' actions you can call on the API without a user's token
 - Users can revoke their tokens from your application.  Always be sure to check for authentication errors
